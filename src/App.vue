@@ -1,5 +1,9 @@
+<script setup>
+import AppBar from "@/components/AppBar.vue"
+</script>
+
 <template>
-    <div>
-        Hello World
-    </div>
+    <v-app>
+        <app-bar />
+    </v-app>
 </template>
