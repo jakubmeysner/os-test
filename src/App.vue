@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import AppBar from "@/components/AppBar.vue"
 import { useStore } from "@/stores/store"
 import Home from "@/components/Home.vue"
