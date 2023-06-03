@@ -16,13 +16,19 @@ const answers = computed(
 
 const answerId = ref<number | null>(null)
 
-function answerQuestion(id: number) {
+function answerQuestion(id: number, correct?: boolean) {
     if (answerId.value === null) {
         answerId.value = id
 
-        store.questionProgress[question.value!.id] = (
-            store.questionProgress[question.value!.id] ?? 0
-        ) + 1
+        if (correct) {
+            store.questionProgress[question.value!.id] = (
+                store.questionProgress[question.value!.id] ?? 0
+            ) + 1
+        } else {
+            store.questionProgress[question.value!.id] = (
+                store.questionProgress[question.value!.id] ?? 0
+            ) - 1
+        }
     }
 }
 
@@ -43,7 +49,7 @@ watch(() => store.questionId, () => {
                     :active="answer.id === answerId"
                     :base-color="answerId !== null ? (answer.correct ? 'success' : 'error') : undefined"
                     :title="answer.answer"
-                    @click="answerQuestion(answer.id)"
+                    @click="answerQuestion(answer.id, answer.correct)"
                 />
             </v-list>
 
