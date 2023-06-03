@@ -153,7 +153,7 @@ const questions: Question[] = [
     },
     {
         id: 7,
-        question: "Występowanie ciągłych błedów strony na skutek zastępowania stron, do których są częste odwołania " +
+        question: "Występowanie ciągłych błędów strony na skutek zastępowania stron, do których są częste odwołania " +
             "to:",
         answers: [
             {
