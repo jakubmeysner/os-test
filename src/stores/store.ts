@@ -10,8 +10,8 @@ export const useStore = defineStore("store", {
     actions: {
         nextQuestion() {
             const qs = questions.filter(
-                (question) => this.questionProgress[question.id] === undefined ||
-                    this.questionProgress[question.id] < 2,
+                (question) => (this.questionProgress[question.id] === undefined ||
+                    this.questionProgress[question.id] < 2) && question.id !== this.questionId,
             )
 
             if (qs.length !== 0) {
