@@ -235,7 +235,7 @@ const questions: Question[] = [
             },
             {
                 id: 3,
-                answer: "Uporządkowane czasowe zdarzeń",
+                answer: "Uporządkowanie czasowe zdarzeń",
                 correct: true,
             },
             {
