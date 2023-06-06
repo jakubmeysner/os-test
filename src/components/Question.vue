@@ -11,7 +11,7 @@ const question = computed(
 )
 
 const answers = computed(
-    () => question.value.noAnswerShuffle ? question.value.answers : shuffle([...question.value!.answers]),
+    () => question.value!.noAnswerShuffle ? question.value!.answers : shuffle([...question.value!.answers]),
 )
 
 const answerId = ref<number | null>(null)
