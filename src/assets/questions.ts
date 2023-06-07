@@ -945,6 +945,576 @@ const questions: Question[] = [
             },
         ],
     },
+    {
+        id: 41,
+        question: "(Nowe 2023) W algorytmie rozproszonego wykrywania blokad (Chandry-Misra-Haasa) przekazywany przez " +
+            "procesy komunikat zawiera:",
+        answers: [
+            {
+                id: 1,
+                answer: "m.in. czas nadania",
+            },
+            {
+                id: 2,
+                answer: "numer twórcy komunikatu, nr wysyłającego oraz nr odbiorcy",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "tylko nr nadawcy oraz nr odbiorcy",
+            },
+            {
+                id: 4,
+                answer: "nr nadawcy oraz nr żądanego zasobu",
+            },
+        ],
+    },
+    {
+        id: 42,
+        question: "(Nowe 2023) Stronicowanie: w tzw. modelu strefowym, zbiór roboczy dla wielkości okna zbioru " +
+            "roboczego równego 10 to:",
+        answers: [
+            {
+                id: 1,
+                answer: "10 ramek danego procesu",
+            },
+            {
+                id: 2,
+                answer: "zbiór stron, do których nastąpiło 10 poprzednich odwołań",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "10 aktywnych procesów",
+            },
+            {
+                id: 4,
+                answer: "strony, do których odwołano się min. 10 razy",
+            },
+        ],
+    },
+    {
+        id: 43,
+        question: "(Nowe 2023) Systemowa kolejka procesów gotowych zawiera procesy:",
+        answers: [
+            {
+                id: 1,
+                answer: "załadowane do RAM i czekające na przydział procesora",
+                correct: true,
+            },
+            {
+                id: 2,
+                answer: "czekające na załadowanie do RAM",
+            },
+            {
+                id: 3,
+                answer: "czekające na zakończenie",
+            },
+            {
+                id: 4,
+                answer: "czekające na dostęp do urządzenia We/Wy",
+            },
+        ],
+    },
+    {
+        id: 44,
+        question: "(Nowe 2023) System realizujący założenia obligatoryjnej kontroli dostępu (Mandatory Access " +
+            "Control) należy zgodnie z 'Kryteriami ewaluacji bezpieczeństwa systemów komp.' (tzw. Orange Book) do:",
+        answers: [
+            {
+                id: 1,
+                answer: "Kategorii bezpieczeństwa D",
+            },
+            {
+                id: 2,
+                answer: "Kategorii bezpieczeństwa C1",
+            },
+            {
+                id: 3,
+                answer: "Kategorii bezpieczeństwa C2",
+            },
+            {
+                id: 4,
+                answer: "Kategorii bezpieczeństwa A lub B",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 45,
+        question: "(Nowe 2023) W pewnym systemie średnia wartość strumienia zgłoszeń wynosi  4 procesy/sek a średnia " +
+            "wartość strumienia obsługi m=6 procesów/sek. Wobec tego średni czas obsługi procesu wynosi (por. wzór " +
+            "Kleinrocka): ",
+        answers: [
+            {
+                id: 1,
+                answer: "1.5 sek.",
+            },
+            {
+                id: 2,
+                answer: "0.66 sek.",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "24 sek.",
+            },
+            {
+                id: 4,
+                answer: "0.5 sek.",
+            },
+        ],
+    },
+    {
+        id: 46,
+        question: "(Nowe 2023) Przy planowaniu przydziału procesora metodą FCFS średni czas oczekiwania procesu:",
+        answers: [
+            {
+                id: 1,
+                answer: "jest zawsze optymalny (najkrótszy)",
+            },
+            {
+                id: 2,
+                answer: "jest zawsze najdłuższy",
+            },
+            {
+                id: 3,
+                answer: "zależy od kolejności zgłaszających się procesów",
+                correct: true,
+            },
+            {
+                id: 4,
+                answer: "zależy od przyjętej długości kwantu czasu",
+            },
+        ],
+    },
+    {
+        id: 47,
+        question: "(Nowe 2023) W pewnym systemie rozproszonym do aktualizacji zwielokrotnionych kopii plików stosuje " +
+            "się protokół głosowania. Dla 10 serwerów przyjęto, że 4 z nich muszą wydać zgodę przy próbie pisania do " +
+            "pliku. Wobec tego w tym systemie:",
+        answers: [
+            {
+                id: 1,
+                answer: "quorum czytania wynosi co najmniej 6",
+            },
+            {
+                id: 2,
+                answer: "quorum czytania wynosi 4",
+            },
+            {
+                id: 3,
+                answer: "quorum pisania wynosi co najmniej 5",
+            },
+            {
+                id: 4,
+                answer: "quorum czytania wynosi co najmniej 7",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 48,
+        question: "(Nowe 2023) W systemie operacyjnym Singularity (Microsoft) procesy izolowane programowo " +
+            "(Software-Isolated Processes) komunikują się za pomocą:",
+        answers: [
+            {
+                id: 1,
+                answer: "Dostępu do pamięci dzielonej",
+            },
+            {
+                id: 2,
+                answer: "Wymiany komunikatów",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "Routingu niezależnego od lokalizacji",
+            },
+            {
+                id: 4,
+                answer: "Obsługiwanych przez jądro systemu plików wymiany",
+            },
+        ],
+    },
+    {
+        id: 49,
+        question: "(Nowe 2023) W algorytmie optymalnym zastępowania stron:",
+        answers: [
+            {
+                id: 1,
+                answer: "usuwamy najwcześniej załadowaną do RAM stronę",
+            },
+            {
+                id: 2,
+                answer: "usuwamy stronę, która najdłużej nie będzie używana",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "usuwamy stronę, która najdłużej nie była używana",
+            },
+            {
+                id: 4,
+                answer: "usuwamy stronę, która była najczęściej używana",
+            },
+        ],
+    },
+    {
+        id: 50,
+        question: "(Nowe 2023) Bezpieczeństwo: aktywny komponent systemu (proces, aplikacja) to:",
+        answers: [
+            {
+                id: 1,
+                answer: "obiekt",
+            },
+            {
+                id: 2,
+                answer: "autentykator",
+            },
+            {
+                id: 3,
+                answer: "audytor",
+            },
+            {
+                id: 4,
+                answer: "podmiot",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 51,
+        question: "(Nowe 2023) Algorytm EDF wybierze żądanie odczytu bloku dyskowego:",
+        answers: [
+            {
+                id: 1,
+                answer: "o minimalnym adresie",
+            },
+            {
+                id: 2,
+                answer: "o najbliższym ograniczeniu czasowym (deadline)",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "nie wymagające ruchu głowicy",
+            },
+            {
+                id: 4,
+                answer: "możliwe do wykonania w najkrótszym czasie",
+            },
+        ],
+    },
+    {
+        id: 52,
+        question: "(Nowe 2023) Wykorzystywanie przy przydziale miejsca na dysku specjalnych bloków zawierających " +
+            "tablice adresów bloków dyskowych należących do danego pliku nosi nazwę:",
+        answers: [
+            {
+                id: 1,
+                answer: "przydziału listowego",
+            },
+            {
+                id: 2,
+                answer: "przydziału indeksowego",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "przydziału ciągłego",
+            },
+            {
+                id: 4,
+                answer: "przydziału stochastycznego",
+            },
+        ],
+    },
+    {
+        id: 53,
+        question: "(Nowe 2023) Istnienie wielu rozłącznych obszarów nieprzydzielonej pamięci to:",
+        answers: [
+            {
+                id: 1,
+                answer: "fragmentacja zewnętrzna",
+                correct: true,
+            },
+            {
+                id: 2,
+                answer: "fragmentacja wewnętrzna",
+            },
+            {
+                id: 3,
+                answer: "wymiana",
+            },
+            {
+                id: 4,
+                answer: "deadlock",
+            },
+        ],
+    },
+    {
+        id: 54,
+        question: "(Nowe 2023) Ograniczenie dostępu do obiektów na bazie tożsamości podmiotów to:",
+        answers: [
+            {
+                id: 1,
+                answer: "Mandatory Access Control",
+            },
+            {
+                id: 2,
+                answer: "audyt",
+            },
+            {
+                id: 3,
+                answer: "Discretionary Access Control",
+                correct: true,
+            },
+            {
+                id: 4,
+                answer: "autentyfikacja",
+            },
+        ],
+    },
+    {
+        id: 55,
+        question: "(Nowe 2023) W algorytmie pierścieniowym przekazywany komunikat zawiera:",
+        answers: [
+            {
+                id: 1,
+                answer: "aktualny czas",
+            },
+            {
+                id: 2,
+                answer: "numery wszystkich procesów w pierścieniu",
+            },
+            {
+                id: 3,
+                answer: "numer strony",
+            },
+            {
+                id: 4,
+                answer: "listę aktywnych procesów przekazujących komunikat",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 56,
+        question: "(Nowe 2023) Rotacyjny algorytm planowania przydziału procesora:",
+        answers: [
+            {
+                id: 1,
+                answer: "wymaga wywłaszczania",
+                correct: true,
+            },
+            {
+                id: 2,
+                answer: "wymaga oszacowania długości fazy procesora",
+            },
+            {
+                id: 3,
+                answer: "jest zawsze niewywłaszczający",
+            },
+            {
+                id: 4,
+                answer: "ma złożoność obliczeniową O(2n)",
+            },
+        ],
+    },
+    {
+        id: 57,
+        question: "(Nowe 2023) Z tzw. Kodowania M z N korzystamy w systemach GRID aby zapewnić:",
+        answers: [
+            {
+                id: 1,
+                answer: "niezawodność routingu TCP/IP",
+            },
+            {
+                id: 2,
+                answer: "bezstratne przechowywanie danych w środowisku rozproszonym",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "spójność semantyczną",
+            },
+            {
+                id: 4,
+                answer: "niezawodny billing",
+            },
+        ],
+    },
+    {
+        id: 58,
+        question: "(Nowe 2023) Rozpr. pamięć dzielona, protokół jednokrotnego zapisu: strona pamięci podręcznej, "
+            + "zawierająca aktualne dane, których nie ma w innych pamięciach podręcznych, ani w pamięci głównej, to " +
+            "strona:",
+        answers: [
+            {
+                id: 1,
+                answer: "czysta",
+            },
+            {
+                id: 2,
+                answer: "brudna",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "unieważniona",
+            },
+            {
+                id: 4,
+                answer: "główna",
+            },
+        ],
+    },
+    {
+        id: 59,
+        question: "(Nowe 2023) Cylinder dysku twardego to:",
+        answers: [
+            {
+                id: 1,
+                answer: "zbiór parzystych sektorów",
+            },
+            {
+                id: 2,
+                answer: "zbiór ścieżek, dostęp do których nie wymaga ruchu głowicy",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "cześć obudowy",
+            },
+            {
+                id: 4,
+                answer: "zbiór ścieżek należących do jednej z powierzchni dysku",
+            },
+        ],
+    },
+    {
+        id: 60,
+        question: "(Nowe 2023) Przy stronicowaniu fragmentacja zewnętrzna:",
+        answers: [
+            {
+                id: 1,
+                answer: "występuje dla dużego rozmiaru strony",
+            },
+            {
+                id: 2,
+                answer: "występuje dla małego rozmiaru strony",
+            },
+            {
+                id: 3,
+                answer: "wynika z nieciągłości przestrzeni adresowej ramek",
+            },
+            {
+                id: 4,
+                answer: "nie występuje",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 61,
+        question: "(Nowe 2023) Algorytm Lamporta zapewnia:",
+        answers: [
+            {
+                id: 1,
+                answer: "spójność pamięci dzielonej",
+            },
+            {
+                id: 2,
+                answer: "uzgodnienie wartości rejestrów podtrzymujących zegarów",
+            },
+            {
+                id: 3,
+                answer: "ustalenie max. współczynnika odchylenia",
+            },
+            {
+                id: 4,
+                answer: "uporządkowanie czasowe zdarzeń w systemie",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 62,
+        question: "(2022) Z tzw. Kodowania M z N korzystamy w systemach GRID aby zapewnić:",
+        answers: [
+            {
+                id: 1,
+                answer: "Spójność semantyczną danych",
+            },
+            {
+                id: 2,
+                answer: "Odporne na uszkodzenia przechowywanie danych w środowisku rozproszonym",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "Niezawodny billing",
+            },
+            {
+                id: 4,
+                answer: "Niezawodność routingu TCP/IP",
+            },
+        ],
+    },
+    {
+        id: 63,
+        question: "Czy na kolosie z SO w 2023 było pytanie o zdjęcie koali?",
+        answers: [
+            {
+                id: 1,
+                answer: "tak",
+            },
+            {
+                id: 2,
+                answer: "nie",
+                correct: true,
+            },
+            {
+                id: 3,
+                answer: "król smoków",
+                correct: true,
+            },
+            {
+                id: 4,
+                answer: "koala ale to drill",
+                correct: true,
+            },
+            {
+                id: 5,
+                answer: "burza magentyczna",
+                correct: true,
+            },
+        ],
+    },
+    {
+        id: 64,
+        question: "(2022) W systemach GRID tzw. Filtr Bloom’a można wykorzystać do:",
+        answers: [
+            {
+                id: 1,
+                answer: "Lokalizacji zasobów w systemie rozproszonym",
+                correct: true,
+            },
+            {
+                id: 2,
+                answer: "Zapewnienia poufności przechowywania informacji",
+            },
+            {
+                id: 3,
+                answer: "Poprawy nastroju administratora systemu",
+            },
+            {
+                id: 4,
+                answer: "Zapewnienia spójności rozproszonej pamięci dzielonej",
+            },
+        ],
+    },
 ]
 
 export default questions
